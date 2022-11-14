@@ -18,6 +18,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.0" PrivateAssets="all" />
     <PackageReference Include="MudBlazor" Version="6.1.0" />
     <PackageReference Include="Blazored.LocalStorage" Version="4.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,5 +28,6 @@
   <ItemGroup>
     <None Remove="MudBlazor" />
     <None Remove="Blazored.LocalStorage" />
+    <None Remove="Microsoft.Extensions.Http" />
   </ItemGroup>
 </Project>

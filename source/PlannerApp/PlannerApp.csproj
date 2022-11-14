@@ -19,6 +19,8 @@
     <PackageReference Include="MudBlazor" Version="6.1.0" />
     <PackageReference Include="Blazored.LocalStorage" Version="4.3.0" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="7.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,5 +31,7 @@
     <None Remove="MudBlazor" />
     <None Remove="Blazored.LocalStorage" />
     <None Remove="Microsoft.Extensions.Http" />
+    <None Remove="Microsoft.AspNetCore.Components.Authorization" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
   </ItemGroup>
 </Project>

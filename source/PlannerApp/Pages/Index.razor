@@ -1,4 +1,5 @@
 ﻿@page "/"
+@layout AuthLayout
 
 <PageTitle>Index</PageTitle>
 
@@ -8,4 +9,14 @@ Welcome to your new app.
 Heyyyy
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<AuthorizeView>
+    <Authorized>
+        <h2>Hello there , welcome to your dashboard</h2>
+    </Authorized>
+
+    <NotAuthorized>
+        <MudLink Href="/authentication/login">Login here</MudLink>
+    </NotAuthorized>
+</AuthorizeView>
 

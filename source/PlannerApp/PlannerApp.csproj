@@ -33,5 +33,18 @@
     <None Remove="Microsoft.Extensions.Http" />
     <None Remove="Microsoft.AspNetCore.Components.Authorization" />
     <None Remove="System.IdentityModel.Tokens.Jwt" />
+    <None Remove="Pages\Authentication\" />
+    <None Remove="Components\" />
+    <None Remove="Components\Authentication\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\Authentication\" />
+    <Folder Include="Components\" />
+    <Folder Include="Components\Authentication\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlannerApp.Shared\PlannerApp.Shared.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

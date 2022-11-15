@@ -1,0 +1,23 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="1">       
+        <MudText Typo="Typo.h5" Class="mt-1">Planner App</MudText>
+        
+    </MudAppBar>
+    <MudMainContent>
+        <MudGrid Justify="Justify.Center" Class ="mt-3">
+            <MudItem sm="12" md="6" lg="4">
+                @Body
+            </MudItem>
+        </MudGrid>
+        
+    </MudMainContent>
+</MudLayout>
+
+@code {
+
+}
+

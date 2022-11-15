@@ -1,0 +1,32 @@
+﻿@namespace PlannerApp.Components
+<EditForm Model="_model" OnValidSubmit="LoginUserAsnyc">
+    <DataAnnotationsValidator/>
+
+    <MudCard>
+        <MudCardHeader>
+            <MudText Typo="Typo.h6">Welcome To Planner App V2.0</MudText>
+        </MudCardHeader>
+
+        <MudCardContent>
+            <MudTextField Label="Email" HelperText="Required" @bind-Value="_model.Email" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+            <MudTextField InputType="InputType.Password" Label="Password" HelperText="Required" @bind-Value="_model.Password" Variant="Variant.Outlined" Margin="Margin.Dense"></MudTextField>
+
+            <ValidationSummary/>
+
+            @if (!string.IsNullOrWhiteSpace(_errorMessage))
+            {
+                <MudAlert Severity="Severity.Error" Dense="true" Class="my-2">@_errorMessage</MudAlert>
+            }
+        </MudCardContent>
+
+        <MudCardActions Class="mb-3">
+            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Disabled="_isBusy">Login</MudButton>
+            <MudButton Variant="Variant.Outlined" Color="Color.Secondary" Class="ml-1" Disabled="_isBusy">Create Account</MudButton>
+        </MudCardActions>
+    </MudCard>
+</EditForm>
+
+@code {
+
+}
+
